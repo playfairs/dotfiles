@@ -1,2 +1,2 @@
 # InvraNet's Dotfiles
-Gargulehub told me to add a readme.
+This branch here (the main one) is for Linux, I have dots for macos on the macos branch.
