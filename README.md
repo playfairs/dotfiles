@@ -1,5 +1,5 @@
 # InvraNet's Dotfiles
-This branch here (the main one) is for Linux, I have dots for macos on the macos branch.
+This branch here (the main one) is for Linux, I have dots for macOS on the macos branch.
 
 ## My Workflow
 
