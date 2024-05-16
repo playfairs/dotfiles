@@ -1,7 +1,7 @@
 #! /bin/bash
 
 function prompt() {
-  case $(echo -e "Yes\nNo" | tofi --prompt "Action") in 
+  case $(echo -e "Yes\nNo" | rofi --prompt "Action") in 
     Yes)
       $($@);; esac
 }
