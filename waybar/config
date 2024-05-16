@@ -1,1 +1,58 @@
-/home/invranet/.config/waybar/configs/[TOP] Default
+{
+    "layer": "top",
+    "position": "top",
+    "height": 50, 
+    // "width": 1280,
+    "spacing": 4, // Spacing inbetween each module
+    
+    // Choose the order of the modules
+    "modules-left": ["custom/cmd", "hyprland/workspaces", "tray"],
+    "modules-right": ["custom/media", "cpu", "network", "pulseaudio", "battery", "clock"],
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
+
+    "network": {
+    "on-click": "kitty -e nmtui",
+    "interval": 5
+    },
+
+    "battery": {
+      
+    },
+
+    "pulseaudio": {
+        // "scroll-step": 1, // %, can be a float
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-source": "{volume}% ",
+        "format-icons": {
+            "headphone": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "default": ["", "", ""]
+        },
+        "on-click": "exec pavucontrol"
+    },
+    "clock": {
+        "format": "{:%d %a. %d %b. %H:%M}",
+    },
+    "custom/media": {
+        "format": "󰎈 {}",
+        "exec": "playerctl metadata title",
+        "escape": true,
+        "tooltip": false,
+        "on-click": "playerctl play-pause",
+        "interval": 60
+    },
+    "custom/cmd": {
+        "format": "A",
+        "escape": true,
+        "on-click": "exec kitty",
+        "tooltip": false,
+        "interval": 3600
+    }
+}
+

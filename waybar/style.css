@@ -1,1 +1,181 @@
-/home/invranet/.config/waybar/style/[Pywal] Chroma Tally.css
+@import url('../../.cache/wal/colors-waybar.css');
+
+@define-color bar-bg rgba(44, 46, 52, 0.90);
+@define-color accent #414550;
+* {
+    /* `otf-font-awesome` is required to be installed for icons */
+    font-family: ComicShannsMono Nerd Font, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+    font-size: 13px;
+}
+
+window#waybar {
+    background-color: @bar-bg;
+    color: @background;
+    transition-property: background-color;
+    transition-duration: .5s;
+}
+
+button {
+    box-shadow: inset 0 -3px transparent;
+    border: none;
+    border-radius: 5;
+}
+
+/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+button:hover {
+    background: inherit;
+}
+
+#workspaces button {
+  background-color: @accent;
+  color: white;
+  border: 1px solid white;
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-right: 50px;
+  border-radius: 10px;
+}
+
+#workspaces button:hover {
+    color: @color10;
+}
+
+#wireplumber,
+#tray,
+
+#workspaces {
+    color: white;
+}
+
+/* If workspaces is the leftmost module, omit left margin */
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0;
+}
+
+/* If workspaces is the rightmost module, omit right margin */
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0;
+}
+
+@keyframes blink {
+    to {
+
+        color: #000000;
+    }
+}
+#battery {
+    background-color: @accent;
+    color: white;
+    border: 1px solid white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;   
+}
+
+#battery.critical:not(.charging) {
+    background-color: @accent;
+    color: white;
+    border: 1px solid white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;      
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+#pulseaudio {
+    background-color: @accent;
+    color: white;
+    border: 1px solid white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#clock {
+    background-color: @accent;
+    color: white;
+    border: 1px solid white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;   
+}
+
+#cpu {
+    background-color: @accent;
+    color: white;
+    border: 1px solid white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;   
+}
+
+#network {
+    background-color: @accent;
+    color: white;
+    border: 1px solid white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;   
+}
+
+#custom-media {
+  color: @color13;
+}
+
+#custom-cmd {
+    background-color: @accent;
+    color: white;
+    border: 1px solid white;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#tray {
+    background-color: @accent;
+    color: white;
+    border: 1px solid white;
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 0px;
+    border-radius: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
