@@ -3,9 +3,14 @@ This branch here (the main one) is for Linux, I have dots for macOS on the macos
 
 ## My Workflow
 
+### Desktop
     - Hyprland
     - Waybar
+    - Mako
+### Productive
+    - Davinci Resolve
     - Neovim
-    - Zed
-    - Spicetify (to config spotify)
-    - Vesktop (with 2 themes for you to pick.)
+
+### Media
+    - Spicetify (complement of Spotify)
+    - Vesktop
