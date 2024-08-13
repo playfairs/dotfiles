@@ -4,13 +4,13 @@ This branch here (the main one) is for Linux, I have dots for macOS on the macos
 ## My Workflow
 
 ### Desktop
-    - Hyprland
-    - Waybar
-    - Mako
+* Hyprland
+* Waybar
+* Mako
 ### Productive
-    - Davinci Resolve
-    - Neovim
+* Davinci Resolve
+* Neovim
 
 ### Media
-    - Spicetify (complement of Spotify)
-    - Vesktop
+* Spicetify (complement of Spotify)
+* Vesktop
