@@ -4,16 +4,9 @@ plugins=(
   git
   archlinux
   zsh-autosuggestions
-  zsh-syntax-highlighting 
+  zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
-alias tmn="ping 8.8.8.8 -c 1"
-alias fuckoff="exit"
-alias p="sudo pacman"
-alias a="paru"
-
+alias fuckoff='exit'
 fastfetch
-certification
-
-export PATH=$PATH:/home/invranet/.spicetify
