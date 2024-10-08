@@ -8,5 +8,7 @@ plugins=(
 )
 
 source $ZSH/oh-my-zsh.sh
-alias fuckoff='exit'
+alias ls="exa --tree --icons --level=1"
+
 fastfetch
+export PATH=$HOME/.local/bin:$PATH
