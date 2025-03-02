@@ -1,4 +1,4 @@
-# InvraNet's Dotfiles
+# Playfairs's Dotfiles
 This branch here (the main one) is for Linux, I have dots for macOS on the macos branch.
 
 ## My Workflow
@@ -14,3 +14,5 @@ This branch here (the main one) is for Linux, I have dots for macOS on the macos
 ### Media
 * Spicetify (complement of Spotify)
 * Vesktop
+
+###### Dotfiles Origin from InvraNet, but Modified.
